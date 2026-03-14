@@ -1,0 +1,22 @@
+name: BetaSystem
+version: '${project.version}'
+main: dev.betasystem.BetaSystem
+api-version: '1.20'
+description: Beta tester management system for RuneMC
+authors: [RuneMC]
+
+permissions:
+  beta.admin:
+    description: Manage beta testers
+    default: op
+
+commands:
+  beta-tester:
+    description: Manage beta testers
+    usage: /beta-tester <add|remove|list> [player]
+  beta:
+    description: Open the beta feature GUI
+    usage: /beta
+  bug:
+    description: Report a bug
+    usage: /bug <description>
